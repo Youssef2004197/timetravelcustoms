@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Time Travel Customs</string>
+
+    <!-- Titres -->
+    <string name="title_main">TIME TRAVEL</string>
+    <string name="subtitle_registration">CUSTOMS REGISTRATION</string>
+
+    <!-- Labels -->
+    <string name="label_name">Full Name</string>
+    <string name="label_birth">Year of birth</string>
+    <string name="label_dest">Year of destination</string>
+
+    <string name="label_purpose">Purpose of travel</string>
+
+    <!-- Purposes (radio buttons) -->
+    <string name="purpose_tourism">Tourism</string>
+    <string name="purpose_modify_past">Modifying the Past</string>
+    <string name="purpose_escape">Escape</string>
+
+    <!-- Hints -->
+    <string name="hint_name">Enter your name...</string>
+    <string name="hint_birth">Enter your year of birth ...</string>
+    <string name="hint_dest">Enter your year of destination ...</string>
+
+    <!-- Bouton -->
+    <string name="btn_inspect">Inspect Profile</string>
+
+    <!-- Messages -->
+    <string name="error_empty_fields">Fill in all the fields</string>
+    <string name="error_no_purpose">Select a purpose of travel</string>
+</resources>
