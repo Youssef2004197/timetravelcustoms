@@ -1,14 +1,16 @@
 package youssef.rezgui.timetravelcustoms;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
-//
+
 public class MainActivity extends AppCompatActivity {
+    //hedhi matricule li tlabeha fl contrainte
+    public static final String MATRICULE = "9898";
     //3 text input ta3 formulaire loula esm thenya 3am lwelada theltha 3am li y7b ymchilo
     private EditText etName;
     private EditText etBirth;
@@ -17,6 +19,23 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton rbTourism;
     private RadioButton rbModifyPast;
     private RadioButton rbEscape;
+    //les mthode static li bch yasn3o key mta3 putextra
+
+    public static String keyName(String matricule) {
+        return matricule + "_NOM_VOYAGEUR";
+    }
+
+    public static String keyBirth(String matricule) {
+        return matricule + "_ANNEE_NAISSANCE";
+    }
+
+    public static String keyDest(String matricule) {
+        return matricule + "_ANNEE_DESTINATION";
+    }
+
+    public static String keyPurpose(String matricule) {
+        return matricule + "_MOTIF";
+    }
     // oncreate heya method truni awl ma l'acitvité tet7al
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +77,13 @@ public class MainActivity extends AppCompatActivity {
         //na3mlo convert ll years w nrodohom integer
         int birth = Integer.parseInt(birthStr);
         int dest = Integer.parseInt(destStr);
-
+        //bch n7elo l'acivité li ba3deha bl expicit intent w zid nab3tho data bl les method static with matricule
+        Intent i = new Intent(this, VerificationActivity.class);
+        i.putExtra(keyName(MATRICULE), name);
+        i.putExtra(keyBirth(MATRICULE), birth);
+        i.putExtra(keyDest(MATRICULE), dest);
+        i.putExtra(keyPurpose(MATRICULE), purpose);
+        startActivity(i);
 
         Toast.makeText(this, name + " " + birth + " -> " + dest + " (" + purpose + ")", Toast.LENGTH_LONG).show();
     }
