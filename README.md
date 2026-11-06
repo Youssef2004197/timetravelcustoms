@@ -59,7 +59,7 @@ Les données passent d'une activité à l'autre uniquement avec des `Intent` exp
 
 | Capture : haut du formulaire | Capture : bas du formulaire |
 |---|---|
-| ![Activité 1 haut](screenshots/01_activity1_form_top.png) | ![Activité 1 bas](screenshots/02_activity1_form_bottom.png) |
+| ![Activité 1 haut](screenshots/1.jpeg) | ![Activité 1 bas](screenshots/2.jpeg) |
 
 ---
 
