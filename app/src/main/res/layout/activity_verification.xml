@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LinearLayout horizontal racine: taswira lil isar (0.3) w RelativeLayout lil ymin (0.7) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_verification_yr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <!-- 3lisar: taswira ta3 voyageur (poids 0.3) -->
+    <ImageView
+        android:id="@+id/iv_photo_yr"
+        android:layout_width="0dp"
+        android:layout_height="165dp"
+        android:layout_margin="12dp"
+        android:layout_weight="0.3"
+        android:background="@drawable/bg_photo_frame"
+        android:contentDescription="@string/photo_desc"
+        android:padding="12dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_traveler_photo" />
+
+    <!-- el ymin: les textes (poids 0.7) -->
+    <RelativeLayout
+        android:id="@+id/rl_info_yr"
+        android:layout_width="0dp"
+        android:layout_height="571dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_weight="0.7"
+        android:background="@drawable/bg_passport"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_header_yr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="@string/verif_header"
+            android:textColor="@color/gold"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_photo_hint_yr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_header_yr"
+            android:fontFamily="@font/inter"
+            android:text="@string/tap_photo_hint"
+            android:textColor="@color/hint_gray"
+            android:textSize="11sp" />
+
+        <!-- esm -->
+        <TextView
+            android:id="@+id/tv_name_label_yr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_photo_hint_yr"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/lbl_traveler"
+            android:textColor="@color/label_gray"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_name_value_yr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_label_yr"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- date de naissance -->
+        <TextView
+            android:id="@+id/tv_birth_label_yr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_value_yr"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/lbl_birth"
+            android:textColor="@color/label_gray"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_birth_value_yr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_birth_label_yr"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- 3am destination -->
+        <TextView
+            android:id="@+id/tv_dest_label_yr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_birth_value_yr"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/lbl_dest"
+            android:textColor="@color/label_gray"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_dest_value_yr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dest_label_yr"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- destination - naissance -->
+        <TextView
+            android:id="@+id/tv_age_label_yr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dest_value_yr"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/lbl_age"
+            android:textColor="@color/label_gray"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_age_value_yr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_age_label_yr"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/gold"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_purpose_label_yr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_age_value_yr"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/lbl_purpose"
+            android:textColor="@color/label_gray"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_purpose_value_yr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_purpose_label_yr"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- 5adhra (clear) wala 7amra (paradoxe), el couleur tet7at fl java -->
+        <TextView
+            android:id="@+id/tv_status_yr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_purpose_value_yr"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <!-- button el approuver (5adhra) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_approve_yr"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_below="@id/tv_status_yr"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter"
+            android:onClick="fctApprove"
+            android:text="@string/btn_approve"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/btn_approve_tint"
+            app:cornerRadius="14dp" />
+
+        <!-- button el refuser (7amra) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_refuse_yr"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_below="@id/btn_approve_yr"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter"
+            android:onClick="fctRefuse"
+            android:text="@string/btn_refuse"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/red_refuse"
+            app:cornerRadius="14dp" />
+    </RelativeLayout>
+</LinearLayout>

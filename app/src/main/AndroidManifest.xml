@@ -21,6 +21,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- activité 2: scanner de paradoxe -->
+        <activity
+            android:name=".VerificationActivity"
+            android:exported="false" />
+
+        <!-- activité 3: el verdict -->
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

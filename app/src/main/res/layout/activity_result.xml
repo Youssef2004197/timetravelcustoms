@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- écran bsit: el fond yetbadel (5adhra / 7amra) 7asb el verdict fl java -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_result_yr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tv_verdict_title_yr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_message_yr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/inter"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_new_traveler_yr"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/inter"
+        android:onClick="fctNewTraveler"
+        android:paddingHorizontal="32dp"
+        android:text="@string/btn_new_traveler"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="14dp" />
+</LinearLayout>

@@ -28,4 +28,30 @@
     <!-- Messages -->
     <string name="error_empty_fields">Fill in all the fields</string>
     <string name="error_no_purpose">Select a purpose of travel</string>
+    <string name="error_years_order">The destination year must be after the year of birth</string>
+    <string name="error_past_future">Modifying the Past needs a destination year before %1$d (the current year). Change the destination year, or change the purpose of travel.</string>
+    <string name="label_photo">Traveler photo (optional)</string>
+    <string name="btn_upload_photo">Upload photo</string>
+
+    <!-- Verification (passport) -->
+    <string name="verif_header">TEMPORAL PASSPORT</string>
+    <string name="lbl_traveler">TRAVELER</string>
+    <string name="lbl_birth">YEAR OF BIRTH</string>
+    <string name="lbl_dest">DESTINATION YEAR</string>
+    <string name="lbl_age">TEMPORAL AGE</string>
+    <string name="lbl_purpose">PURPOSE OF TRAVEL</string>
+    <string name="age_years">%1$d years</string>
+    <string name="status_clear">NO PARADOX DETECTED</string>
+    <string name="status_paradox">PARADOX RISK - APPROVAL BLOCKED</string>
+    <string name="tap_photo_hint">Tap the photo to change it</string>
+    <string name="photo_desc">Traveler photo</string>
+    <string name="btn_approve">Approve the time jump</string>
+    <string name="btn_refuse">Refuse (Paradox risk)</string>
+
+    <!-- Result -->
+    <string name="result_approved_title">APPROVED</string>
+    <string name="result_refused_title">REFUSED</string>
+    <string name="result_approved_msg">Safe Travel %1$s!</string>
+    <string name="result_refused_msg">%1$s is under temporal arrest</string>
+    <string name="btn_new_traveler">New traveler</string>
 </resources>
