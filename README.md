@@ -78,7 +78,7 @@ Les données passent d'une activité à l'autre uniquement avec des `Intent` exp
 4. **Règle du paradoxe** : si le motif est *Modifying the Past* **et** que l'âge temporel est un nombre premier, le bouton **Approve** est désactivé (`setEnabled(false)`) dès le chargement. Un tampon rouge *PARADOX RISK - APPROVAL BLOCKED* s'affiche. Sinon, un tampon vert *NO PARADOX DETECTED* s'affiche.
 5. Deux boutons : **Approve the time jump** (vert) et **Refuse (Paradox risk)** (rouge). Chacun lance `ResultActivity` avec un `Intent` explicite qui transporte le verdict (booléen) **et** le nom du voyageur.
 
-![Activité 2](screenshots/03_activity2_passport.png)
+![Activité 2](<screen shots/3.jpeg>)
 
 ---
 
@@ -91,7 +91,7 @@ Les données passent d'une activité à l'autre uniquement avec des `Intent` exp
 
 | Approuvé | Refusé |
 |---|---|
-| ![Approuvé](screenshots/04_activity3_approved.png) | ![Refusé](screenshots/05_activity3_refused.png) |
+| ![Approuvé](<screen shots/4.jpeg>) | ![Refusé](<screen shots/5.jpeg>) |
 
 ---
 
